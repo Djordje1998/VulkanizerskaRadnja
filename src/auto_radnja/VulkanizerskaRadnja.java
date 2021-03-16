@@ -3,8 +3,20 @@ package auto_radnja;
 import java.util.LinkedList;
 import auto_radnja.gume.AutoGuma;
 
+/**
+ * Klasa VulkanizerskaRadnja koja implementira interfejs Radnja.
+ * Implementira sve motode iz klase Radnja i sadrzi privatnu listu guma.
+ * Klasa ima mogucnost dodavanja i pronalazenja guma preko String vrednosti koja predstavlja marku gume.
+ * 
+ * @author Djordje Novakovic
+ * @version 0.0.2
+ */
 public class VulkanizerskaRadnja implements Radnja {
 	
+	/**
+	 * Privatna lista svih guma koja ne sadrzi duplikate.
+	 * Implementira preko klase LinkedList
+	 */
 	private LinkedList<AutoGuma> gume = new LinkedList<AutoGuma>();
 
 	@Override
