@@ -92,7 +92,7 @@ public class AutoGuma {
 	 * @throws java.lang.RuntimeException u slucaju kada vrednost parametra ne upada u dozvoljeni opseg.
 	 */
 	public void setPrecnik(int precnik) {
-		if (precnik < 13 && precnik > 22)
+		if (precnik < 13 || precnik > 22) //nadjena logicka greska za vreme testiranja, umesto && treba ||
 			throw new RuntimeException("Precnik van opsega");
 		this.precnik = precnik;
 	}
@@ -113,7 +113,7 @@ public class AutoGuma {
 	 * @throws java.lang.RuntimeException u slucaju kada vrednost parametra ne upada u dozvoljeni opseg.
 	 */
 	public void setSirina(int sirina) {
-		if (sirina < 135 && sirina > 355)
+		if (sirina < 135 || sirina > 355) //nadjena logicka greska za vreme testiranja, umesto && treba ||
 			throw new RuntimeException("Sirina van opsega");
 		this.sirina = sirina;
 	}
