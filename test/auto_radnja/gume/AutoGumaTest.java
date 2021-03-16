@@ -40,6 +40,7 @@ class AutoGumaTest {
 		assertEquals(250, a.getSirina());
 		assertEquals(50, a.getVisina());
 	}
+	
 
 	@Test
 	void testSetMarkaModel() {
